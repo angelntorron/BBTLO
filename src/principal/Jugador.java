@@ -87,9 +87,10 @@ public class Jugador {
 	}
 	public static void organizarArrayJugadores(){
 		//Object[] jugadoresArray=jugadores.toArray();
+		//jugadoresArray[i]=jugadoresArray[i+1];
 		for(int i=0;i<jugadores.size();i++){
-			//jugadoresArray[i]=jugadoresArray[i+1];
 			jugadores.get(i).setPosicion(i-1);
+			//que es esto
 		}
 	}
 	
