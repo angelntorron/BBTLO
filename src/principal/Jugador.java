@@ -44,7 +44,7 @@ public class Jugador {
 	
 	
 	public String toString() {
-		return "\nNombre: "+nombre+"\nPosición: "+posicion+"\n";
+		return nombre+"\n";
 	}
 
 	public static void agregarJugadores() {
@@ -78,17 +78,17 @@ public class Jugador {
 			/*for(int i=borrar;i<jugadores.size();i++){
 				jugadores.set(borrar-1, jugadores.get(borrar));
 			}*/
-			organizarArrayJugadores();
+			organizarArrayJugadores(borrar);
 		}
 		else{
 			System.out.println("No hay ningún jugador");
 		}
 			
 	}
-	public static void organizarArrayJugadores(){
+	public static void organizarArrayJugadores(int borrar){
 		//Object[] jugadoresArray=jugadores.toArray();
 		//jugadoresArray[i]=jugadoresArray[i+1];
-		for(int i=0;i<jugadores.size();i++){
+		for(int i=borrar;i<jugadores.size();i++){
 			jugadores.get(i).setPosicion(i-1);
 			//que es esto
 		}
