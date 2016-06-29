@@ -34,6 +34,7 @@ public class Prueba {
 	}
 	
 	public static void cargarPruebas(){
+		
 	String jugBebe1="El jugador debe beber un trago";
 	Prueba jugadorBebe1=new Prueba(1, "UN TRAGO", jugBebe1);
 	pruebas.add(jugadorBebe1);
@@ -51,7 +52,7 @@ public class Prueba {
 	pruebas.add(tindertinder);
 	
 	String tRex="El jugador debe tener sus brazos pegados al cuerpo durante una ronda";
-	Prueba rex=new Prueba(5,"TREX", tRex);
+	Prueba rex=new Prueba(5,"T-REX", tRex);
 	pruebas.add(rex);
 	
 	String ojosSerpiente="Los jugadores que le miren a los ojos deberán beber (Durante una ronda)";
@@ -93,31 +94,58 @@ public class Prueba {
 	String regla="El jugador pondrá una nueva norma para toda la partida ";
 	Prueba regla1=new Prueba(14,"REGLA",regla);
 	pruebas.add(regla1);
-	/*
-	String =" ";
-	Prueba =new Prueba(,,);
-	pruebas.add();
-
-	String =" ";
-	Prueba =new Prueba(,,);
-	pruebas.add();
-
-	String =" ";
-	Prueba =new Prueba(,,);
-	pruebas.add();
-
-	String =" ";
-	Prueba =new Prueba(,,);
-	pruebas.add();
-
-	String =" ";
-	Prueba =new Prueba(,,);
-	pruebas.add();
-
-	String =" ";
-	Prueba =new Prueba(,,);
-	pruebas.add();
 	
-	*/
+	String ron="Los jugadores que esten bebiendo ron deben beber ";
+	Prueba ronco=new Prueba(15,"CON LA BOTELLA DE RON",ron);
+	pruebas.add(ronco);
+	
+	String a ="El jugador sólo podrá usar la vocal 'a' al hablar durante una ronda, cada vez que se confunda beberá ";
+	Prueba soloLaA=new Prueba(16,"SOLO CON LA A",a);
+	pruebas.add(soloLaA);
+
+	String dasLoQueEres="Si el jugador es capaz de beber 4 sorbos, regalará 4 sorbos a otra persona,"
+			+ " la cantidad que logre beber, la podrá regalar ";
+	Prueba loQueEres=new Prueba(17,"DAS LO QUE ERES",dasLoQueEres);
+	pruebas.add(loQueEres);
+	
+	String vecino ="El jugador que viva más cerca debe beber ";
+	Prueba buenVecino=new Prueba(18,"BUEN VECINO",vecino);
+	pruebas.add(buenVecino);
+	
+	String aprobeiras="El jugador que más asignaturas haya suspendido debe beber";
+	Prueba aprobar=new Prueba(19,"APROBEIRAS DE NOLEIRAS",aprobeiras);
+	pruebas.add(aprobar);
+
+	String prohibidoCantar="Los jugadores que canten, tarareen o silben la canción que este sonando deben beber ";
+	Prueba cantarNo =new Prueba(20,"PROHIBIDO CANTAR",prohibidoCantar);
+	pruebas.add(cantarNo);
+	
+	String refranero="Todos los jugadores tendrán que decir un refran por turnos, así hasta que alguno repita o no sepa ninguno más";
+	Prueba refran=new Prueba(21,"REFRANERO",refranero);
+	pruebas.add(refran);
+	
+	String numerosRomanos="Hacía la derecha y en orden se deberá ir sumando en números romanos, por ejemplo: palo, palo palo, palo palo palo,"
+			+ " palo uve..."
+			+ "el jugador que se equivoque debe beber";
+	Prueba romanos=new Prueba(22, "NÚMEROS ROMANOS", numerosRomanos);
+	pruebas.add(romanos);
+	
+	String despegue="El jugador empezará una cuenta regresiva desde un número (10<x>30) el que llegue a 0 deberá beber";
+	Prueba cuentaAtras=new Prueba(23, "CUENTA ATRÁS", despegue);
+	pruebas.add(cuentaAtras);
+	
+	String control="Durante una ronda: el jugador pondrá el dedo gordo sobre la mesa y todos lo jugadores lo tendrán que ir poniendo"
+			+ "según se vayan dando cuenta, el último deberá beber";
+	Prueba dedoGordo=new Prueba(24, "EL TIENE EL PODER", control);
+	pruebas.add(dedoGordo);
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	}
 }

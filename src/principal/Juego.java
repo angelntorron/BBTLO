@@ -56,15 +56,16 @@ public class Juego {
 	public static void turno(){
 		while(true){
 			for(int i=0;i<Jugador.jugadores.size();i++){
+				System.out.print("\033[H\033[2J");
 				String jugador=Jugador.jugadores.get(i).toString();
 				int numeroAleatorio = (int) (Math.random()*Prueba.pruebas.size());
 				int numeroAleatorio2 = (int)Math.floor(Math.random()*(3-1+1)+1);
 				//System.out.println(numeroAleatorio);
 				String prueba=Prueba.pruebas.get(numeroAleatorio).toString();
-				System.out.println(" Turno de: "+jugador+"\n Bebe "+numeroAleatorio2+"  "+prueba);
+				System.out.println(" Turno de: "+jugador+"\n Bebe "+numeroAleatorio2+"\n  "+prueba);
 				sc.nextLine();
 				//System.out.flush();
-				System.out.print("\033[H\033[2J");
+				
 				
 			}
 		}
