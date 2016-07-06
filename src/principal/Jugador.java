@@ -90,7 +90,7 @@ public class Jugador {
 		//jugadoresArray[i]=jugadoresArray[i+1];
 		for(int i=borrar;i<jugadores.size();i++){
 			jugadores.get(i).setPosicion(i-1);
-			//que es esto
+			//que es esto¿?
 		}
 	}
 	

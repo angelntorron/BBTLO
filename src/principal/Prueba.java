@@ -6,7 +6,7 @@ public class Prueba {
 	private int id;
 	private String descripcion, nombre;
 	static ArrayList<Prueba> pruebas=new ArrayList<Prueba>();
-
+	static ArrayList<Prueba> pruebas2=new ArrayList<Prueba>();
 	
 	public Prueba(int id, String nombre, String descripcion){
 		this.id=id;
@@ -139,6 +139,27 @@ public class Prueba {
 	Prueba dedoGordo=new Prueba(24, "EL TIENE EL PODER", control);
 	pruebas.add(dedoGordo);
 	
+	String cultura="La cultura chupística pide, nombres de: comunidades autónomas de España";
+	Prueba chup=new Prueba(25,"CCAA",cultura);
+	pruebas.add(chup);
+	
+	String cult="La cultura chupística pide, nombres de: películas Españolas";
+	Prueba pelis=new Prueba(26,"SPANISH MOVIEs",cult);
+	pruebas.add(pelis);
+	
+	String okinawa="La cultura chupística pide, nombres de: películas con oscar";
+	Prueba oscar=new Prueba(26, "AND THE OSCAR GOES TO", okinawa);
+	pruebas.add(oscar);
+	
+	String ppt="El jugador deberá elegir a un rival, con el que apostará cuantos sorbos se juega, a continuación jugarán a piedra"
+			+ "papel y tijera al mejor de 3, el que pierda beberá la cantidad apostada previamente";
+	Prueba piedraPapelTijera=new Prueba(27,"PIEDRA PAPEL Y TIJERA",ppt);
+	pruebas.add(piedraPapelTijera);
+	
+	String rima="El jugador dice una palabra cualquiera y el siguiente deberá decir una palabra que rima con la dicha asi hasta que alguien"
+			+ "falle, y deberá beber";
+	Prueba rim=new Prueba(28,"ARRIMA LA RIMA",rima);
+	pruebas.add(rim);
 	
 	
 	
